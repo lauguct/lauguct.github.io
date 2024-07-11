@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Lau</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #f3f3f3; /* Dark grey */
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            color: #000000; /* Black */
+        }
+
+        .navbar-nav .nav-link {
+            color: #000000;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #0044ff; /* Primary blue */
+        }
+
+        .jumbotron {
+            background: url('') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            color: #000000;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .jumbotron img {
+            position: absolute;
+            right:10%;
+            z-index: -1; /*Send the image behind the text*/
+        }
+
+        .jumbotron h1 {
+            font-size: 3.5rem;
+        }
+
+        .lead {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+
+        .project {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            color: #343a40; /* Dark grey */
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 1.1rem;
+            color: #666666;
+        }
+
+        .project a {
+            color: #007bff; /* Primary blue */
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #343a40; /* Dark grey */
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#other">Other</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron w/ image tag-->
+    <div class="jumbotron">
+        <img src="C:\Users\laure\OneDrive\Desktop\portfolio\images\green.jpeg" alt="Cover image">
+        <div class="container">
+        <h1>Hi, I'm Lau!</h1>
+        <p class="lead">An Information Technology Graduate</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section id="about">
+            <div class="text-center mb-5">
+                <h2>About Me</h2>
+                <p class="lead"> As an enthusiastic IT fresh graduate specializing in web development. I possess hands-on experience in building websites using HTML, CSS, Bootstrap, JavaScript, PHP, and other libraries and frameworks.
+                    Beyond web development, my internship at Magsaysay People Resources Corporation, provided me with valuable experience in Project Management, Quality Assurance, and Business Analysis.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="projects" class="mb-5">
+            <h2 class="text-center mb-4">Projects</h2>
+
+            <div class="project">
+                <h3>Forda Go: Carpooling Website</h3>
+                <p>Capstone Project - August 2022 to March 2023</p>
+                <p>Description: A full-stack carpooling website that is accessible to users. Through this website, travelers can check the availability of the vehicles, make a booking, and make payments online. Also, car owners can use the website to register their vehicles, which could help them earn a living.</p>
+                <p>-Connected front-end to API and Applied responsive design through desktop and mobile</p>
+                <p>Languages Used: HTML | JavaScript | JQuery | Bootstrap | CSS | PHP | MySQL | XAMPP</p>
+                <p>Link: <a href="#">Live Demo</a> / <a href="#">GitHub Repository</a></p>
+            </div>
+
+            <div class="project">
+                <h3>AIOJA: An Online Job Hunting Site</h3>
+                <p>New Ventures Project - June 2023 to October 2023</p>
+                <p>Description: A prototype for online job applications. This allows recruiters and applicants to communicate and complete the hiring process, which saves effort and money. This uses AI features that allow end users to create CVs and recommend current technological trends in order to maintain competitiveness in the market.</p>
+                <p>Technologies Used: Figma and Adobe XD</p>
+                <p>Link: <a href="#">Live Demo</a> / <a href="#">GitHub Repository</a></p>
+            </div>
+
+            <div class="project">
+                <h3>Food To Go</h3>
+                <p>A small group project</p>
+                <p>Description: A food delivery website helping the customers to order food from their choice of restaurants across Dagupan City and nearby areas.</p>
+                <p>Technologies Used: HTML, CSS, JavaScript, React.</p>
+                <p>Link: <a href="#">Live Demo</a> / <a href="#">GitHub Repository</a></p>
+            </div>
+            <hr>
+            <div class="other">
+                <h3>Internship Project/Activities</h3>
+                <p>Magsaysay People Resources Company</p>
+                <p>Internship duration: February 2024 to May 2024</p>
+                <p>Link: <a href="#">References</a></p>
+            </div>
+        </section>
+        <hr>
+
+        <section id="contact" class="mb-5">
+            <div class="text-center">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out to me at <a href="laureneterrado.g@gmail.com">laureneterrado.g@gmail.com</a>
+                </p>
+                <p>Find me on <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Lau. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
